@@ -21,7 +21,7 @@ function App() {
         token, login, logout, userId, isAuthenticated
     }}>
         <BrowserRouter>
-            <span style={{position: 'absolute', right: '0', padding: '.375rem .75rem'}}>hi, {userName}!</span>
+            <span style={{position: 'absolute', right: '0', padding: '.375rem .75rem'}}>{userName ? `hi, ${userName}!` : 'hi!'}</span>
             { routes }
         </BrowserRouter>
 

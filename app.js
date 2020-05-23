@@ -7,12 +7,13 @@ const path = require('path');
 const app = express();
 app.use(express.json({ extended: false }));
 app.use(express.static(__dirname));
+
 app.use('/', express.static(path.join(__dirname, 'client', 'build')));
 
 
 
 app.use('/auth', require('./routes/auth.routes'));
-app.use('/covers', require('./routes/covers.routes'));
+app.use('/api/covers', require('./routes/covers.routes'));
 
 
 app.get('*', (req, res) => {

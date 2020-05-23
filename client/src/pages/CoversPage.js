@@ -20,7 +20,7 @@ export const CoversPage = () => {
 
     const fetchCovers = useCallback(async () => {
         try {
-            const fetched = await request('/covers/', 'GET', null, {
+            const fetched = await request('/api/covers', 'GET', null, {
                 Authorization: `Bearer ${token}`,
                 skip: `${skip}`
             });

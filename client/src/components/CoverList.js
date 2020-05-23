@@ -5,14 +5,14 @@ import {CSSTransition, TransitionGroup} from "react-transition-group";
 
 
 export const CoverList = ({covers}) => (
-    <TransitionGroup component={'div'} className='row align-items-center '>
+    <TransitionGroup component={'div'} className='row align-items-center justify-content-center'>
         {covers.map((cover, index) => (
             <CSSTransition
                 timeout={1000}
                 classNames="item"
                 key={index}
             >
-                <div className="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-2 p-4">
+                <div className="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 p-4">
                     <Link className='text-dark' to={`/detail/${cover._id}`}>
                         <div className="card" style={{cursor: 'pointer'}}>
                             <div className="card-body">

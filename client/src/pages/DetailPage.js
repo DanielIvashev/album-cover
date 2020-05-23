@@ -17,7 +17,7 @@ export const DetailPage = () => {
     const getCover = useCallback(async () => {
         try {
 
-            const fetched = await request(`/covers/${coverId}`, 'GET', null, {
+            const fetched = await request(`/api/covers/${coverId}`, 'GET', null, {
                 Authorization: `Bearer ${token}`
             });
 
