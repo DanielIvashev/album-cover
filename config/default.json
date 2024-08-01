@@ -1,4 +1,5 @@
 {
+  "test": "123",
   "port": 5000,
   "mongoUri": "mongodb+srv://daniel:daniel1234567888@cluster0-42xja.azure.mongodb.net/test?retryWrites=true&w=majority",
   "jwtSecret": "daniel1999",
